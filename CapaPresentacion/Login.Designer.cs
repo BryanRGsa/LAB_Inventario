@@ -33,10 +33,10 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btningresar = new FontAwesome.Sharp.IconButton();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.btncancelar = new FontAwesome.Sharp.IconButton();
+            this.btningresars = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 263);
+            this.label1.Size = new System.Drawing.Size(280, 339);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -56,7 +56,7 @@
             this.label2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(48, 205);
+            this.label2.Location = new System.Drawing.Point(48, 257);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 32);
             this.label2.TabIndex = 1;
@@ -81,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(307, 53);
+            this.label3.Location = new System.Drawing.Point(324, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 3;
@@ -90,71 +90,76 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(307, 111);
+            this.label4.Location = new System.Drawing.Point(324, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Contraseña";
             // 
-            // textBox1
+            // txtusuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(310, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtusuario.Location = new System.Drawing.Point(327, 106);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(239, 20);
+            this.txtusuario.TabIndex = 5;
             // 
-            // textBox2
+            // txtcontraseña
             // 
-            this.textBox2.Location = new System.Drawing.Point(310, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(239, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // btningresar
-            // 
-            this.btningresar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btningresar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.btningresar.IconColor = System.Drawing.Color.Black;
-            this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btningresar.IconSize = 21;
-            this.btningresar.Location = new System.Drawing.Point(310, 179);
-            this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(93, 38);
-            this.btningresar.TabIndex = 7;
-            this.btningresar.Text = "Ingresar";
-            this.btningresar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btningresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btningresar.UseVisualStyleBackColor = false;
-            this.btningresar.Click += new System.EventHandler(this.iconButton1_Click);
+            this.txtcontraseña.Location = new System.Drawing.Point(327, 185);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.Size = new System.Drawing.Size(239, 20);
+            this.txtcontraseña.TabIndex = 6;
             // 
             // btncancelar
             // 
             this.btncancelar.BackColor = System.Drawing.Color.Tomato;
+            this.btncancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelar.ForeColor = System.Drawing.Color.White;
             this.btncancelar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btncancelar.IconColor = System.Drawing.Color.Black;
+            this.btncancelar.IconColor = System.Drawing.Color.White;
             this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncancelar.IconSize = 21;
-            this.btncancelar.Location = new System.Drawing.Point(456, 179);
+            this.btncancelar.Location = new System.Drawing.Point(471, 251);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(93, 38);
             this.btncancelar.TabIndex = 8;
-            this.btncancelar.Text = "Cancelar";
+            this.btncancelar.Text = "Salir";
             this.btncancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
+            // btningresars
+            // 
+            this.btningresars.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btningresars.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btningresars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btningresars.ForeColor = System.Drawing.Color.White;
+            this.btningresars.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.btningresars.IconColor = System.Drawing.Color.White;
+            this.btningresars.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btningresars.IconSize = 21;
+            this.btningresars.Location = new System.Drawing.Point(327, 251);
+            this.btningresars.Name = "btningresars";
+            this.btningresars.Size = new System.Drawing.Size(93, 38);
+            this.btningresars.TabIndex = 9;
+            this.btningresars.Text = "Ingresar";
+            this.btningresars.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btningresars.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btningresars.UseVisualStyleBackColor = false;
+            this.btningresars.Click += new System.EventHandler(this.btningresars_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(593, 263);
+            this.ClientSize = new System.Drawing.Size(631, 339);
+            this.Controls.Add(this.btningresars);
             this.Controls.Add(this.btncancelar);
-            this.Controls.Add(this.btningresar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtcontraseña);
+            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.iconPictureBox1);
@@ -162,6 +167,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
@@ -177,9 +183,9 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private FontAwesome.Sharp.IconButton btningresar;
+        private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private FontAwesome.Sharp.IconButton btncancelar;
+        private FontAwesome.Sharp.IconButton btningresars;
     }
 }

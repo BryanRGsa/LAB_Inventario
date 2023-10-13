@@ -168,6 +168,7 @@
             this.Controls.Add(this.MenuTitulo);
             this.MainMenuStrip = this.Menu;
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.Menu.ResumeLayout(false);
