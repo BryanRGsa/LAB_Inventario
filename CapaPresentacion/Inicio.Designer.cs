@@ -52,7 +52,7 @@
             this.menumaterialdañado});
             this.Menu.Location = new System.Drawing.Point(0, 72);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(844, 73);
+            this.Menu.Size = new System.Drawing.Size(901, 73);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "menuStrip1";
             // 
@@ -68,7 +68,7 @@
             this.menuprestamo.Size = new System.Drawing.Size(80, 69);
             this.menuprestamo.Text = "Prestamo";
             this.menuprestamo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuprestamo.Click += new System.EventHandler(this.iconMenuItem5_Click);
+            this.menuprestamo.Click += new System.EventHandler(this.menuprestamo_Click);
             // 
             // menudevolucion
             // 
@@ -82,6 +82,7 @@
             this.menudevolucion.Size = new System.Drawing.Size(80, 69);
             this.menudevolucion.Text = "Devolucion";
             this.menudevolucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menudevolucion.Click += new System.EventHandler(this.menudevolucion_Click);
             // 
             // menuinventario
             // 
@@ -95,6 +96,7 @@
             this.menuinventario.Size = new System.Drawing.Size(80, 69);
             this.menuinventario.Text = "Inventario";
             this.menuinventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuinventario.Click += new System.EventHandler(this.menuinventario_Click);
             // 
             // menuinforme
             // 
@@ -108,6 +110,7 @@
             this.menuinforme.Size = new System.Drawing.Size(80, 69);
             this.menuinforme.Text = "Informe";
             this.menuinforme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuinforme.Click += new System.EventHandler(this.menuinforme_Click);
             // 
             // menuhistorial
             // 
@@ -121,6 +124,7 @@
             this.menuhistorial.Size = new System.Drawing.Size(80, 69);
             this.menuhistorial.Text = "Historial";
             this.menuhistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuhistorial.Click += new System.EventHandler(this.menuhistorial_Click);
             // 
             // menumaterialdañado
             // 
@@ -134,6 +138,7 @@
             this.menumaterialdañado.Size = new System.Drawing.Size(96, 69);
             this.menumaterialdañado.Text = "Material Dañado";
             this.menumaterialdañado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menumaterialdañado.Click += new System.EventHandler(this.menumaterialdañado_Click);
             // 
             // MenuTitulo
             // 
@@ -142,7 +147,7 @@
             this.MenuTitulo.Location = new System.Drawing.Point(0, 0);
             this.MenuTitulo.Name = "MenuTitulo";
             this.MenuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MenuTitulo.Size = new System.Drawing.Size(844, 72);
+            this.MenuTitulo.Size = new System.Drawing.Size(901, 72);
             this.MenuTitulo.TabIndex = 1;
             this.MenuTitulo.Text = "menuStrip2";
             // 
@@ -162,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 549);
+            this.ClientSize = new System.Drawing.Size(901, 574);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.MenuTitulo);
@@ -186,11 +191,11 @@
         private System.Windows.Forms.MenuStrip MenuTitulo;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconMenuItem menumaterialdañado;
-        private FontAwesome.Sharp.IconMenuItem menuprestamo;
         private FontAwesome.Sharp.IconMenuItem menudevolucion;
         private FontAwesome.Sharp.IconMenuItem menuinventario;
         private FontAwesome.Sharp.IconMenuItem menuinforme;
         private FontAwesome.Sharp.IconMenuItem menuhistorial;
+        private FontAwesome.Sharp.IconMenuItem menuprestamo;
     }
 }
 

@@ -11,3 +11,9 @@ C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj
 C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormDevolucion.resources
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormHistorial.resources
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormInforme.resources
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormInventario.resources
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormMaterialdañado.resources
+C:\Users\DELL\Documents\Laboratorio inventario\LABREGISApp1\CapaPresentacion\obj\Debug\CapaPresentacion.FormPrestamo.resources

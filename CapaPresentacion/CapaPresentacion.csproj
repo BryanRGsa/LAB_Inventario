@@ -53,6 +53,42 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolucion.Designer.cs">
+      <DependentUpon>FormDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistorial.Designer.cs">
+      <DependentUpon>FormHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInforme.Designer.cs">
+      <DependentUpon>FormInforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventario.Designer.cs">
+      <DependentUpon>FormInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaterialdañado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaterialdañado.Designer.cs">
+      <DependentUpon>FormMaterialdañado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrestamo.Designer.cs">
+      <DependentUpon>FormPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +103,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDevolucion.resx">
+      <DependentUpon>FormDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistorial.resx">
+      <DependentUpon>FormHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInforme.resx">
+      <DependentUpon>FormInforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventario.resx">
+      <DependentUpon>FormInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaterialdañado.resx">
+      <DependentUpon>FormMaterialdañado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrestamo.resx">
+      <DependentUpon>FormPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
