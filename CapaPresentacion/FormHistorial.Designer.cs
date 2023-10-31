@@ -49,7 +49,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormHistorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormHistorial";
+            this.Text = "a";
             this.ResumeLayout(false);
             this.PerformLayout();
 
