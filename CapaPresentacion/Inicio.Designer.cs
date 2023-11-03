@@ -51,9 +51,9 @@
             this.menuinforme,
             this.menuhistorial,
             this.menumaterialdañado});
-            this.Menu.Location = new System.Drawing.Point(0, 72);
+            this.Menu.Location = new System.Drawing.Point(0, 55);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(946, 73);
+            this.Menu.Size = new System.Drawing.Size(887, 73);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "menuStrip1";
             // 
@@ -148,7 +148,7 @@
             this.MenuTitulo.Location = new System.Drawing.Point(0, 0);
             this.MenuTitulo.Name = "MenuTitulo";
             this.MenuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MenuTitulo.Size = new System.Drawing.Size(946, 72);
+            this.MenuTitulo.Size = new System.Drawing.Size(887, 55);
             this.MenuTitulo.TabIndex = 1;
             this.MenuTitulo.Text = "menuStrip2";
             // 
@@ -158,7 +158,7 @@
             this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(37, 24);
+            this.label1.Location = new System.Drawing.Point(29, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 31);
             this.label1.TabIndex = 2;
@@ -166,16 +166,16 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Location = new System.Drawing.Point(0, 148);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 131);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(946, 474);
+            this.panelContenedor.Size = new System.Drawing.Size(887, 465);
             this.panelContenedor.TabIndex = 3;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 620);
+            this.ClientSize = new System.Drawing.Size(887, 599);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Menu);
