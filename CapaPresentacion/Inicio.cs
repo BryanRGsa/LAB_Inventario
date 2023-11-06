@@ -24,11 +24,6 @@ namespace CapaPresentacion
             // Código que se ejecuta cuando el formulario se carga.
         }
 
-        private void menudevolucion_Click(object sender, EventArgs e)
-        {
-            FormDevolucion formDevolucion = new FormDevolucion();
-            AbrirFormularioEnContenedor(formDevolucion);
-        }
 
         private void menuprestamo_Click(object sender, EventArgs e)
         {

@@ -30,7 +30,6 @@
         {
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.menuprestamo = new FontAwesome.Sharp.IconMenuItem();
-            this.menudevolucion = new FontAwesome.Sharp.IconMenuItem();
             this.menuinventario = new FontAwesome.Sharp.IconMenuItem();
             this.menuinforme = new FontAwesome.Sharp.IconMenuItem();
             this.menuhistorial = new FontAwesome.Sharp.IconMenuItem();
@@ -46,7 +45,6 @@
             this.Menu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuprestamo,
-            this.menudevolucion,
             this.menuinventario,
             this.menuinforme,
             this.menuhistorial,
@@ -70,20 +68,6 @@
             this.menuprestamo.Text = "Prestamo";
             this.menuprestamo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuprestamo.Click += new System.EventHandler(this.menuprestamo_Click);
-            // 
-            // menudevolucion
-            // 
-            this.menudevolucion.AutoSize = false;
-            this.menudevolucion.IconChar = FontAwesome.Sharp.IconChar.HandHoldingHand;
-            this.menudevolucion.IconColor = System.Drawing.Color.Black;
-            this.menudevolucion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menudevolucion.IconSize = 50;
-            this.menudevolucion.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menudevolucion.Name = "menudevolucion";
-            this.menudevolucion.Size = new System.Drawing.Size(80, 69);
-            this.menudevolucion.Text = "Devolucion";
-            this.menudevolucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menudevolucion.Click += new System.EventHandler(this.menudevolucion_Click);
             // 
             // menuinventario
             // 
@@ -200,7 +184,6 @@
         private System.Windows.Forms.MenuStrip MenuTitulo;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconMenuItem menumaterialdañado;
-        private FontAwesome.Sharp.IconMenuItem menudevolucion;
         private FontAwesome.Sharp.IconMenuItem menuinventario;
         private FontAwesome.Sharp.IconMenuItem menuinforme;
         private FontAwesome.Sharp.IconMenuItem menuhistorial;

@@ -53,12 +53,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormDevolucion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDevolucion.Designer.cs">
-      <DependentUpon>FormDevolucion.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,9 +97,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormDevolucion.resx">
-      <DependentUpon>FormDevolucion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormHistorial.resx">
       <DependentUpon>FormHistorial.cs</DependentUpon>
     </EmbeddedResource>
