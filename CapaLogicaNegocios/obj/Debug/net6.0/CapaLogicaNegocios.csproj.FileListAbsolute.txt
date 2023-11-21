@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\bin\Debug\net6.0\CapaLogicaNegocios.deps.json
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\bin\Debug\net6.0\CapaLogicaNegocios.dll
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\bin\Debug\net6.0\CapaLogicaNegocios.pdb
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.AssemblyInfo.cs
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.dll
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\refint\CapaLogicaNegocios.dll
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\CapaLogicaNegocios.pdb
+C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaLogicaNegocios\obj\Debug\net6.0\ref\CapaLogicaNegocios.dll

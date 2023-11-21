@@ -41,8 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.datosmaterial = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.datosmaterial)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -169,12 +169,12 @@
             this.label9.Size = new System.Drawing.Size(197, 450);
             this.label9.TabIndex = 17;
             // 
-            // dataGridView1
+            // datosmaterial
             // 
-            this.dataGridView1.Location = new System.Drawing.Point(203, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(585, 343);
-            this.dataGridView1.TabIndex = 0;
+            this.datosmaterial.Location = new System.Drawing.Point(235, 78);
+            this.datosmaterial.Name = "datosmaterial";
+            this.datosmaterial.Size = new System.Drawing.Size(585, 343);
+            this.datosmaterial.TabIndex = 0;
             // 
             // FormInventario
             // 
@@ -182,7 +182,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(852, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datosmaterial);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnmodificar);
@@ -199,7 +199,7 @@
             this.Name = "FormInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInventario";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosmaterial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +219,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datosmaterial;
     }
 }

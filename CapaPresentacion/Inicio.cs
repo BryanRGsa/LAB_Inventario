@@ -49,12 +49,6 @@ namespace CapaPresentacion
             AbrirFormularioEnContenedor(formHistorial);
         }
 
-        private void menumaterialdañado_Click(object sender, EventArgs e)
-        {
-            FormMaterialdañado formMaterialDañado = new FormMaterialdañado();
-            AbrirFormularioEnContenedor(formMaterialDañado);
-        }
-
         private void AbrirFormularioEnContenedor(Form formulario)
         {
             if (formularioActivo != null)

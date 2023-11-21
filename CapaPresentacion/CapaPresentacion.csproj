@@ -71,12 +71,6 @@
     <Compile Include="FormInventario.Designer.cs">
       <DependentUpon>FormInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMaterialdañado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMaterialdañado.Designer.cs">
-      <DependentUpon>FormMaterialdañado.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,9 +99,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormInventario.resx">
       <DependentUpon>FormInventario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMaterialdañado.resx">
-      <DependentUpon>FormMaterialdañado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrestamo.resx">
       <DependentUpon>FormPrestamo.cs</DependentUpon>

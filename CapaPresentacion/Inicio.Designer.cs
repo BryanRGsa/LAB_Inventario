@@ -33,7 +33,6 @@
             this.menuinventario = new FontAwesome.Sharp.IconMenuItem();
             this.menuinforme = new FontAwesome.Sharp.IconMenuItem();
             this.menuhistorial = new FontAwesome.Sharp.IconMenuItem();
-            this.menumaterialdañado = new FontAwesome.Sharp.IconMenuItem();
             this.MenuTitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
@@ -43,15 +42,15 @@
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuprestamo,
             this.menuinventario,
             this.menuinforme,
-            this.menuhistorial,
-            this.menumaterialdañado});
+            this.menuhistorial});
             this.Menu.Location = new System.Drawing.Point(0, 55);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(887, 73);
+            this.Menu.Size = new System.Drawing.Size(86, 500);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "menuStrip1";
             // 
@@ -111,20 +110,6 @@
             this.menuhistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuhistorial.Click += new System.EventHandler(this.menuhistorial_Click);
             // 
-            // menumaterialdañado
-            // 
-            this.menumaterialdañado.AutoSize = false;
-            this.menumaterialdañado.IconChar = FontAwesome.Sharp.IconChar.FlaskVial;
-            this.menumaterialdañado.IconColor = System.Drawing.Color.Black;
-            this.menumaterialdañado.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.menumaterialdañado.IconSize = 50;
-            this.menumaterialdañado.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menumaterialdañado.Name = "menumaterialdañado";
-            this.menumaterialdañado.Size = new System.Drawing.Size(96, 69);
-            this.menumaterialdañado.Text = "Material Dañado";
-            this.menumaterialdañado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menumaterialdañado.Click += new System.EventHandler(this.menumaterialdañado_Click);
-            // 
             // MenuTitulo
             // 
             this.MenuTitulo.AutoSize = false;
@@ -132,7 +117,7 @@
             this.MenuTitulo.Location = new System.Drawing.Point(0, 0);
             this.MenuTitulo.Name = "MenuTitulo";
             this.MenuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MenuTitulo.Size = new System.Drawing.Size(887, 55);
+            this.MenuTitulo.Size = new System.Drawing.Size(978, 55);
             this.MenuTitulo.TabIndex = 1;
             this.MenuTitulo.Text = "menuStrip2";
             // 
@@ -150,16 +135,16 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Location = new System.Drawing.Point(0, 131);
+            this.panelContenedor.Location = new System.Drawing.Point(89, 55);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(887, 465);
+            this.panelContenedor.Size = new System.Drawing.Size(1075, 500);
             this.panelContenedor.TabIndex = 3;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 599);
+            this.ClientSize = new System.Drawing.Size(978, 555);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Menu);
@@ -183,7 +168,6 @@
 #pragma warning restore CS0108 // El miembro oculta el miembro heredado. Falta una contraseña nueva
         private System.Windows.Forms.MenuStrip MenuTitulo;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconMenuItem menumaterialdañado;
         private FontAwesome.Sharp.IconMenuItem menuinventario;
         private FontAwesome.Sharp.IconMenuItem menuinforme;
         private FontAwesome.Sharp.IconMenuItem menuhistorial;
