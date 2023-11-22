@@ -17,34 +17,9 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Login_Load(object sender, EventArgs e)
         {
-
+            txtcontraseña.UseSystemPasswordChar = true;
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -52,25 +27,35 @@ namespace CapaPresentacion
             this.Close();
         }
 
-        private void btningresars_Click(object sender, EventArgs e)
-        {
-            Inicio form = new Inicio();
+        private void btningresar_Click_1(object sender, EventArgs e)
+        {     
+        string usuario = txtusuario.Text.Trim();
+            string contraseña = txtcontraseña.Text.Trim();
 
-            form.Show();
-            this.Hide();
-
-            form.FormClosing += frm_closing;
-
+            // Verifica las credenciales
+            if (usuario == "HESSEN" && contraseña == "HESSENLAB")
+            {
+                Inicio form = new Inicio();
+                form.Show();
+                this.Hide();
+                form.FormClosing += frm_closing;
+            }
+            else
+            {
+                MessageBox.Show("Credenciales incorrectas. Inténtalo de nuevo.");
+                txtcontraseña.Text = "";
+                txtusuario.Focus();
+            }
         }
 
-        private void frm_closing(object sender, FormClosingEventArgs e) {
-
+        private void frm_closing(object sender, FormClosingEventArgs e)
+        {
             txtusuario.Text = "";
             txtcontraseña.Text = "";
             this.Show();
-
-            this.Show();
         }
+
 
     }
 }
+

@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btneliminar = new FontAwesome.Sharp.IconButton();
             this.btnmodificar = new FontAwesome.Sharp.IconButton();
             this.btnagregar = new FontAwesome.Sharp.IconButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcantidadmat = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxmatdañado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -63,12 +63,12 @@
             this.label3.TabIndex = 61;
             this.label3.Text = "Nombre del causante";
             // 
-            // textBox3
+            // txt
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 20);
-            this.textBox3.TabIndex = 60;
+            this.txt.Location = new System.Drawing.Point(12, 130);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(165, 20);
+            this.txt.TabIndex = 60;
             // 
             // label8
             // 
@@ -119,12 +119,12 @@
             this.btnagregar.Text = "Agregar";
             this.btnagregar.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txtcantidadmat
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 240);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 55;
+            this.txtcantidadmat.Location = new System.Drawing.Point(12, 240);
+            this.txtcantidadmat.Name = "txtcantidadmat";
+            this.txtcantidadmat.Size = new System.Drawing.Size(165, 20);
+            this.txtcantidadmat.TabIndex = 55;
             // 
             // label7
             // 
@@ -152,13 +152,6 @@
             this.label6.TabIndex = 52;
             this.label6.Text = "Fecha incidente";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 51;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -177,23 +170,31 @@
             this.label9.Size = new System.Drawing.Size(197, 450);
             this.label9.TabIndex = 49;
             // 
+            // comboBoxmatdañado
+            // 
+            this.comboBoxmatdañado.FormattingEnabled = true;
+            this.comboBoxmatdañado.Location = new System.Drawing.Point(12, 78);
+            this.comboBoxmatdañado.Name = "comboBoxmatdañado";
+            this.comboBoxmatdañado.Size = new System.Drawing.Size(165, 21);
+            this.comboBoxmatdañado.TabIndex = 62;
+            // 
             // FormInforme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxmatdañado);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnagregar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcantidadmat);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
@@ -209,17 +210,17 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt;
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconButton btneliminar;
         private FontAwesome.Sharp.IconButton btnmodificar;
         private FontAwesome.Sharp.IconButton btnagregar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcantidadmat;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBoxmatdañado;
     }
 }
