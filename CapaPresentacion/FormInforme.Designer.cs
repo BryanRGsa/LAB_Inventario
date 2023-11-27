@@ -78,7 +78,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(171, 26);
             this.label8.TabIndex = 58;
-            this.label8.Text = "Agregar material";
+            this.label8.Text = "Añada incidencia";
             // 
             // btneliminar
             // 
