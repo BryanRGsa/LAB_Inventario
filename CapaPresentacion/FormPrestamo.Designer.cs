@@ -31,13 +31,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPersona = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFechaPrestamo = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.datosprestamo = new System.Windows.Forms.DataGridView();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +49,8 @@
             this.iconButtonEliminar = new FontAwesome.Sharp.IconButton();
             this.iconButtonModificar = new FontAwesome.Sharp.IconButton();
             this.iconButtonAgregar = new FontAwesome.Sharp.IconButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbMateriales = new System.Windows.Forms.ComboBox();
+            this.cmbCantidadDisponibleMaterial = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.datosprestamo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,12 +81,12 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Persona";
             // 
-            // textBox3
+            // txtPersona
             // 
-            this.textBox3.Location = new System.Drawing.Point(17, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtPersona.Location = new System.Drawing.Point(17, 74);
+            this.txtPersona.Name = "txtPersona";
+            this.txtPersona.Size = new System.Drawing.Size(165, 20);
+            this.txtPersona.TabIndex = 6;
             // 
             // label5
             // 
@@ -97,12 +97,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "DNI";
             // 
-            // textBox4
+            // txtDNI
             // 
-            this.textBox4.Location = new System.Drawing.Point(217, 74);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtDNI.Location = new System.Drawing.Point(217, 74);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(165, 20);
+            this.txtDNI.TabIndex = 8;
             // 
             // label6
             // 
@@ -113,13 +113,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Fecha";
             // 
-            // dateTimePicker1
+            // dateTimePickerFechaPrestamo
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Location = new System.Drawing.Point(445, 25);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(165, 20);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dateTimePickerFechaPrestamo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePickerFechaPrestamo.Location = new System.Drawing.Point(445, 25);
+            this.dateTimePickerFechaPrestamo.Name = "dateTimePickerFechaPrestamo";
+            this.dateTimePickerFechaPrestamo.Size = new System.Drawing.Size(165, 20);
+            this.dateTimePickerFechaPrestamo.TabIndex = 11;
             // 
             // label7
             // 
@@ -129,13 +129,6 @@
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Cantidad";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(445, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 13;
             // 
             // label8
             // 
@@ -240,13 +233,21 @@
             this.iconButtonAgregar.Text = "Agregar";
             this.iconButtonAgregar.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cmbMateriales
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(217, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 21);
-            this.comboBox1.TabIndex = 23;
+            this.cmbMateriales.FormattingEnabled = true;
+            this.cmbMateriales.Location = new System.Drawing.Point(217, 25);
+            this.cmbMateriales.Name = "cmbMateriales";
+            this.cmbMateriales.Size = new System.Drawing.Size(165, 21);
+            this.cmbMateriales.TabIndex = 23;
+            // 
+            // cmbCantidadDisponibleMaterial
+            // 
+            this.cmbCantidadDisponibleMaterial.FormattingEnabled = true;
+            this.cmbCantidadDisponibleMaterial.Location = new System.Drawing.Point(445, 74);
+            this.cmbCantidadDisponibleMaterial.Name = "cmbCantidadDisponibleMaterial";
+            this.cmbCantidadDisponibleMaterial.Size = new System.Drawing.Size(165, 21);
+            this.cmbCantidadDisponibleMaterial.TabIndex = 24;
             // 
             // FormPrestamo
             // 
@@ -254,19 +255,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(836, 456);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbCantidadDisponibleMaterial);
+            this.Controls.Add(this.cmbMateriales);
             this.Controls.Add(this.iconButtonEliminar);
             this.Controls.Add(this.iconButtonModificar);
             this.Controls.Add(this.iconButtonAgregar);
             this.Controls.Add(this.datosprestamo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerFechaPrestamo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPersona);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -284,13 +285,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPersona;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaPrestamo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView datosprestamo;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
@@ -303,6 +303,7 @@
         private FontAwesome.Sharp.IconButton iconButtonEliminar;
         private FontAwesome.Sharp.IconButton iconButtonModificar;
         private FontAwesome.Sharp.IconButton iconButtonAgregar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbMateriales;
+        private System.Windows.Forms.ComboBox cmbCantidadDisponibleMaterial;
     }
 }

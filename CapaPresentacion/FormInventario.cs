@@ -12,33 +12,29 @@ namespace CapaPresentacion
 {
     public partial class FormInventario : Form
     {
+        int cantidad = 0; // Declaración de la variable cantidad
+
         public FormInventario()
         {
             InitializeComponent();
         }
 
-        private void comboBoxañadirgabinete_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
         private void dateTimePickerFechaRegistro_ValueChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void txtcantidadmaterial_TextChanged(object sender, EventArgs e)
+        private void txtCantidadMaterial_TextChanged_1(object sender, EventArgs e)
         {
 
         }
 
         private void btnagregarmaterial_Click(object sender, EventArgs e)
         {
-            string gabineteSeleccionado = comboBoxañadirgabinete.SelectedItem?.ToString();
-            int cantidad = 0;
 
-            if (!string.IsNullOrEmpty(txtcantidadmaterial.Text))
+            if (!string.IsNullOrEmpty(txtCantidadMaterial.Text))
             {
-                if (int.TryParse(txtcantidadmaterial.Text, out cantidad))
+                if (int.TryParse(txtCantidadMaterial.Text, out cantidad))
                 {
                     // Lógica para agregar el material
                     // Llama a tu capa de lógica de negocios o gestor de inventario
@@ -90,6 +86,10 @@ namespace CapaPresentacion
 
         }
 
+        private void comboBoxNumeroGabinete_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }

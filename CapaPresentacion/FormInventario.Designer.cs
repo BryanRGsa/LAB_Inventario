@@ -32,20 +32,20 @@
             this.btneliminarmaterial = new FontAwesome.Sharp.IconButton();
             this.btnmodificarmaterial = new FontAwesome.Sharp.IconButton();
             this.btnagregarmaterial = new FontAwesome.Sharp.IconButton();
-            this.txtcantidadmaterial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxañadirgabinete = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.datagriddatosmaterial = new System.Windows.Forms.DataGridView();
             this.NombreMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumeroGabinete = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.dateTimePickerFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantidadDisponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePickerFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.txtNombreMaterial = new System.Windows.Forms.TextBox();
+            this.comboBoxNumeroGabinete = new System.Windows.Forms.ComboBox();
+            this.txtCantidadMaterial = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagriddatosmaterial)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,14 +101,6 @@
             this.btnagregarmaterial.UseVisualStyleBackColor = false;
             this.btnagregarmaterial.Click += new System.EventHandler(this.btnagregarmaterial_Click);
             // 
-            // txtcantidadmaterial
-            // 
-            this.txtcantidadmaterial.Location = new System.Drawing.Point(12, 240);
-            this.txtcantidadmaterial.Name = "txtcantidadmaterial";
-            this.txtcantidadmaterial.Size = new System.Drawing.Size(165, 20);
-            this.txtcantidadmaterial.TabIndex = 29;
-            this.txtcantidadmaterial.TextChanged += new System.EventHandler(this.txtcantidadmaterial_TextChanged);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -126,15 +118,6 @@
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 26;
             this.label6.Text = "Fecha";
-            // 
-            // comboBoxañadirgabinete
-            // 
-            this.comboBoxañadirgabinete.FormattingEnabled = true;
-            this.comboBoxañadirgabinete.Location = new System.Drawing.Point(12, 131);
-            this.comboBoxañadirgabinete.Name = "comboBoxañadirgabinete";
-            this.comboBoxañadirgabinete.Size = new System.Drawing.Size(165, 21);
-            this.comboBoxañadirgabinete.TabIndex = 25;
-            this.comboBoxañadirgabinete.SelectedIndexChanged += new System.EventHandler(this.comboBoxañadirgabinete_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -187,15 +170,6 @@
             this.NumeroGabinete.HeaderText = "Número de Gabinete ";
             this.NumeroGabinete.Name = "NumeroGabinete";
             // 
-            // dateTimePickerFechaRegistro
-            // 
-            this.dateTimePickerFechaRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePickerFechaRegistro.Location = new System.Drawing.Point(12, 185);
-            this.dateTimePickerFechaRegistro.Name = "dateTimePickerFechaRegistro";
-            this.dateTimePickerFechaRegistro.Size = new System.Drawing.Size(165, 20);
-            this.dateTimePickerFechaRegistro.TabIndex = 34;
-            this.dateTimePickerFechaRegistro.ValueChanged += new System.EventHandler(this.dateTimePickerFechaRegistro_ValueChanged);
-            // 
             // FechaRegistro
             // 
             this.FechaRegistro.HeaderText = "Fecha de Registro";
@@ -206,6 +180,15 @@
             this.CantidadDisponible.HeaderText = "Cantidad Disponible";
             this.CantidadDisponible.Name = "CantidadDisponible";
             // 
+            // dateTimePickerFechaRegistro
+            // 
+            this.dateTimePickerFechaRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePickerFechaRegistro.Location = new System.Drawing.Point(12, 185);
+            this.dateTimePickerFechaRegistro.Name = "dateTimePickerFechaRegistro";
+            this.dateTimePickerFechaRegistro.Size = new System.Drawing.Size(165, 20);
+            this.dateTimePickerFechaRegistro.TabIndex = 34;
+            this.dateTimePickerFechaRegistro.ValueChanged += new System.EventHandler(this.dateTimePickerFechaRegistro_ValueChanged);
+            // 
             // txtNombreMaterial
             // 
             this.txtNombreMaterial.Location = new System.Drawing.Point(11, 78);
@@ -213,12 +196,31 @@
             this.txtNombreMaterial.Size = new System.Drawing.Size(165, 20);
             this.txtNombreMaterial.TabIndex = 35;
             // 
+            // comboBoxNumeroGabinete
+            // 
+            this.comboBoxNumeroGabinete.FormattingEnabled = true;
+            this.comboBoxNumeroGabinete.Location = new System.Drawing.Point(12, 131);
+            this.comboBoxNumeroGabinete.Name = "comboBoxNumeroGabinete";
+            this.comboBoxNumeroGabinete.Size = new System.Drawing.Size(165, 21);
+            this.comboBoxNumeroGabinete.TabIndex = 36;
+            this.comboBoxNumeroGabinete.SelectedIndexChanged += new System.EventHandler(this.comboBoxNumeroGabinete_SelectedIndexChanged);
+            // 
+            // txtCantidadMaterial
+            // 
+            this.txtCantidadMaterial.Location = new System.Drawing.Point(11, 240);
+            this.txtCantidadMaterial.Name = "txtCantidadMaterial";
+            this.txtCantidadMaterial.Size = new System.Drawing.Size(165, 20);
+            this.txtCantidadMaterial.TabIndex = 37;
+            this.txtCantidadMaterial.TextChanged += new System.EventHandler(this.txtCantidadMaterial_TextChanged_1);
+            // 
             // FormInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(852, 450);
+            this.Controls.Add(this.txtCantidadMaterial);
+            this.Controls.Add(this.comboBoxNumeroGabinete);
             this.Controls.Add(this.txtNombreMaterial);
             this.Controls.Add(this.dateTimePickerFechaRegistro);
             this.Controls.Add(this.datagriddatosmaterial);
@@ -226,10 +228,8 @@
             this.Controls.Add(this.btneliminarmaterial);
             this.Controls.Add(this.btnmodificarmaterial);
             this.Controls.Add(this.btnagregarmaterial);
-            this.Controls.Add(this.txtcantidadmaterial);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxañadirgabinete);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
@@ -247,10 +247,8 @@
         private FontAwesome.Sharp.IconButton btneliminarmaterial;
         private FontAwesome.Sharp.IconButton btnmodificarmaterial;
         private FontAwesome.Sharp.IconButton btnagregarmaterial;
-        private System.Windows.Forms.TextBox txtcantidadmaterial;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBoxañadirgabinete;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
@@ -261,5 +259,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantidadDisponible;
         private System.Windows.Forms.TextBox txtNombreMaterial;
+        private System.Windows.Forms.ComboBox comboBoxNumeroGabinete;
+        private System.Windows.Forms.TextBox txtCantidadMaterial;
     }
 }

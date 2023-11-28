@@ -5,26 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data.SqlClient;
+using System;
 
 namespace CapaAccesoDatos
 {
     public class ConexionBaseDatos
     {
-        private string cadenaConexion = "TuCadenaDeConexion"; // Reemplaza con tu cadena de conexión
+        private string rutaBaseDatos;
 
-        public SqlConnection ObtenerConexion()
+        public ConexionBaseDatos(string rutaBD)
         {
-            SqlConnection conexion = new SqlConnection(cadenaConexion);
-            try
-            {
-                conexion.Open();
-            }
-            catch (Exception ex)
-            {
-                // Manejo de excepciones
-                Console.WriteLine("Error al abrir la conexión: " + ex.Message);
-            }
-            return conexion;
+            rutaBaseDatos = rutaBD;
+        }
+
+        public SQLiteConnection ObtenerConexion()
+        {
+            string connectionString = $"Data Source={rutaBaseDatos};Version=3;";
+            return new SQLiteConnection(connectionString);
         }
     }
 }

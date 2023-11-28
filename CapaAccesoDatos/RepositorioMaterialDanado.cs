@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using CapaLogicaNegocio;
+using System.Data.SQLite;
+
+
+
+SQLiteConnection conexion = new SQLiteConnection("Data Source=ruta_base_datos.db;Version=3;");
 
 namespace CapaAccesoDatos
 {
@@ -13,9 +18,9 @@ namespace CapaAccesoDatos
     {
         private ConexionBaseDatos conexion;
 
-        public RepositorioMaterialDanado()
+        public RepositorioMaterialDanado(string rutaBaseDatos)
         {
-            conexion = new ConexionBaseDatos();
+            conexion = new ConexionBaseDatos(rutaBaseDatos); // Proporciona la ruta de la base de datos aquí
         }
 
         // Método para manejar operaciones de material dañado en la base de datos
@@ -24,7 +29,7 @@ namespace CapaAccesoDatos
         {
             // Lógica para registrar material dañado en la base de datos utilizando la conexión
             // Ejemplo:
-            using (SqlConnection conn = conexion.ObtenerConexion())
+            SQLiteConnection conexion = new SQLiteConnection("Data Source=ruta_base_datos.db;Version=3;");
             {
                 // Insertar datos en la tabla de material dañado
                 // ...
