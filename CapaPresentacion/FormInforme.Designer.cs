@@ -28,31 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtCausanteDanio = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btneliminar = new FontAwesome.Sharp.IconButton();
-            this.btnmodificar = new FontAwesome.Sharp.IconButton();
-            this.btnagregar = new FontAwesome.Sharp.IconButton();
-            this.txtcantidadmat = new System.Windows.Forms.TextBox();
+            this.btnEliminarMaterialdanado = new FontAwesome.Sharp.IconButton();
+            this.btnModificarMaterialdanado = new FontAwesome.Sharp.IconButton();
+            this.btnAgregarMaterialdanado = new FontAwesome.Sharp.IconButton();
+            this.comboBoxCantidadMaterialDanado = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFechaDanio = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBoxmatdañado = new System.Windows.Forms.ComboBox();
+            this.comboBoxNombreMaterialDanado = new System.Windows.Forms.ComboBox();
+            this.dgvMaterialDanado = new System.Windows.Forms.DataGridView();
+            this.NombreMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Causante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaIncidente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadDanada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterialDanado)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(342, 206);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hola soy el formulario Informe";
             // 
             // label3
             // 
@@ -63,12 +58,12 @@
             this.label3.TabIndex = 61;
             this.label3.Text = "Nombre del causante";
             // 
-            // txt
+            // txtCausanteDanio
             // 
-            this.txt.Location = new System.Drawing.Point(12, 130);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(165, 20);
-            this.txt.TabIndex = 60;
+            this.txtCausanteDanio.Location = new System.Drawing.Point(12, 130);
+            this.txtCausanteDanio.Name = "txtCausanteDanio";
+            this.txtCausanteDanio.Size = new System.Drawing.Size(165, 20);
+            this.txtCausanteDanio.TabIndex = 60;
             // 
             // label8
             // 
@@ -80,51 +75,51 @@
             this.label8.TabIndex = 58;
             this.label8.Text = "Añada incidencia";
             // 
-            // btneliminar
+            // btnEliminarMaterialdanado
             // 
-            this.btneliminar.BackColor = System.Drawing.Color.LightCoral;
-            this.btneliminar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btneliminar.IconColor = System.Drawing.Color.Black;
-            this.btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btneliminar.Location = new System.Drawing.Point(12, 390);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(165, 31);
-            this.btneliminar.TabIndex = 59;
-            this.btneliminar.Text = "Eliminar";
-            this.btneliminar.UseVisualStyleBackColor = false;
+            this.btnEliminarMaterialdanado.BackColor = System.Drawing.Color.LightCoral;
+            this.btnEliminarMaterialdanado.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEliminarMaterialdanado.IconColor = System.Drawing.Color.Black;
+            this.btnEliminarMaterialdanado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEliminarMaterialdanado.Location = new System.Drawing.Point(12, 390);
+            this.btnEliminarMaterialdanado.Name = "btnEliminarMaterialdanado";
+            this.btnEliminarMaterialdanado.Size = new System.Drawing.Size(165, 31);
+            this.btnEliminarMaterialdanado.TabIndex = 59;
+            this.btnEliminarMaterialdanado.Text = "Eliminar";
+            this.btnEliminarMaterialdanado.UseVisualStyleBackColor = false;
             // 
-            // btnmodificar
+            // btnModificarMaterialdanado
             // 
-            this.btnmodificar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnmodificar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnmodificar.IconColor = System.Drawing.Color.Black;
-            this.btnmodificar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnmodificar.Location = new System.Drawing.Point(12, 338);
-            this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(165, 31);
-            this.btnmodificar.TabIndex = 57;
-            this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.UseVisualStyleBackColor = false;
+            this.btnModificarMaterialdanado.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnModificarMaterialdanado.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnModificarMaterialdanado.IconColor = System.Drawing.Color.Black;
+            this.btnModificarMaterialdanado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnModificarMaterialdanado.Location = new System.Drawing.Point(12, 338);
+            this.btnModificarMaterialdanado.Name = "btnModificarMaterialdanado";
+            this.btnModificarMaterialdanado.Size = new System.Drawing.Size(165, 31);
+            this.btnModificarMaterialdanado.TabIndex = 57;
+            this.btnModificarMaterialdanado.Text = "Modificar";
+            this.btnModificarMaterialdanado.UseVisualStyleBackColor = false;
             // 
-            // btnagregar
+            // btnAgregarMaterialdanado
             // 
-            this.btnagregar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnagregar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnagregar.IconColor = System.Drawing.Color.Black;
-            this.btnagregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnagregar.Location = new System.Drawing.Point(12, 292);
-            this.btnagregar.Name = "btnagregar";
-            this.btnagregar.Size = new System.Drawing.Size(165, 31);
-            this.btnagregar.TabIndex = 56;
-            this.btnagregar.Text = "Agregar";
-            this.btnagregar.UseVisualStyleBackColor = false;
+            this.btnAgregarMaterialdanado.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAgregarMaterialdanado.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnAgregarMaterialdanado.IconColor = System.Drawing.Color.Black;
+            this.btnAgregarMaterialdanado.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarMaterialdanado.Location = new System.Drawing.Point(12, 292);
+            this.btnAgregarMaterialdanado.Name = "btnAgregarMaterialdanado";
+            this.btnAgregarMaterialdanado.Size = new System.Drawing.Size(165, 31);
+            this.btnAgregarMaterialdanado.TabIndex = 56;
+            this.btnAgregarMaterialdanado.Text = "Agregar";
+            this.btnAgregarMaterialdanado.UseVisualStyleBackColor = false;
             // 
-            // txtcantidadmat
+            // comboBoxCantidadMaterialDanado
             // 
-            this.txtcantidadmat.Location = new System.Drawing.Point(12, 240);
-            this.txtcantidadmat.Name = "txtcantidadmat";
-            this.txtcantidadmat.Size = new System.Drawing.Size(165, 20);
-            this.txtcantidadmat.TabIndex = 55;
+            this.comboBoxCantidadMaterialDanado.Location = new System.Drawing.Point(12, 240);
+            this.comboBoxCantidadMaterialDanado.Name = "comboBoxCantidadMaterialDanado";
+            this.comboBoxCantidadMaterialDanado.Size = new System.Drawing.Size(165, 20);
+            this.comboBoxCantidadMaterialDanado.TabIndex = 55;
             // 
             // label7
             // 
@@ -135,13 +130,13 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Cantidad del  material";
             // 
-            // dateTimePicker1
+            // dateTimePickerFechaDanio
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 185);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(165, 20);
-            this.dateTimePicker1.TabIndex = 53;
+            this.dateTimePickerFechaDanio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePickerFechaDanio.Location = new System.Drawing.Point(12, 185);
+            this.dateTimePickerFechaDanio.Name = "dateTimePickerFechaDanio";
+            this.dateTimePickerFechaDanio.Size = new System.Drawing.Size(165, 20);
+            this.dateTimePickerFechaDanio.TabIndex = 53;
             // 
             // label6
             // 
@@ -170,13 +165,47 @@
             this.label9.Size = new System.Drawing.Size(197, 450);
             this.label9.TabIndex = 49;
             // 
-            // comboBoxmatdañado
+            // comboBoxNombreMaterialDanado
             // 
-            this.comboBoxmatdañado.FormattingEnabled = true;
-            this.comboBoxmatdañado.Location = new System.Drawing.Point(12, 78);
-            this.comboBoxmatdañado.Name = "comboBoxmatdañado";
-            this.comboBoxmatdañado.Size = new System.Drawing.Size(165, 21);
-            this.comboBoxmatdañado.TabIndex = 62;
+            this.comboBoxNombreMaterialDanado.FormattingEnabled = true;
+            this.comboBoxNombreMaterialDanado.Location = new System.Drawing.Point(12, 78);
+            this.comboBoxNombreMaterialDanado.Name = "comboBoxNombreMaterialDanado";
+            this.comboBoxNombreMaterialDanado.Size = new System.Drawing.Size(165, 21);
+            this.comboBoxNombreMaterialDanado.TabIndex = 62;
+            // 
+            // dgvMaterialDanado
+            // 
+            this.dgvMaterialDanado.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.dgvMaterialDanado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaterialDanado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NombreMaterial,
+            this.Causante,
+            this.FechaIncidente,
+            this.CantidadDanada});
+            this.dgvMaterialDanado.Location = new System.Drawing.Point(277, 62);
+            this.dgvMaterialDanado.Name = "dgvMaterialDanado";
+            this.dgvMaterialDanado.Size = new System.Drawing.Size(444, 321);
+            this.dgvMaterialDanado.TabIndex = 63;
+            // 
+            // NombreMaterial
+            // 
+            this.NombreMaterial.HeaderText = "Nombre del Material";
+            this.NombreMaterial.Name = "NombreMaterial";
+            // 
+            // Causante
+            // 
+            this.Causante.HeaderText = "Causante del Daño";
+            this.Causante.Name = "Causante";
+            // 
+            // FechaIncidente
+            // 
+            this.FechaIncidente.HeaderText = "Fecha del Incidente";
+            this.FechaIncidente.Name = "FechaIncidente";
+            // 
+            // CantidadDanada
+            // 
+            this.CantidadDanada.HeaderText = "Cantidad Dañada";
+            this.CantidadDanada.Name = "CantidadDanada";
             // 
             // FormInforme
             // 
@@ -184,44 +213,48 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBoxmatdañado);
+            this.Controls.Add(this.dgvMaterialDanado);
+            this.Controls.Add(this.comboBoxNombreMaterialDanado);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtCausanteDanio);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btneliminar);
-            this.Controls.Add(this.btnmodificar);
-            this.Controls.Add(this.btnagregar);
-            this.Controls.Add(this.txtcantidadmat);
+            this.Controls.Add(this.btnEliminarMaterialdanado);
+            this.Controls.Add(this.btnModificarMaterialdanado);
+            this.Controls.Add(this.btnAgregarMaterialdanado);
+            this.Controls.Add(this.comboBoxCantidadMaterialDanado);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerFechaDanio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label1);
             this.Name = "FormInforme";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInforme";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterialDanado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtCausanteDanio;
         private System.Windows.Forms.Label label8;
-        private FontAwesome.Sharp.IconButton btneliminar;
-        private FontAwesome.Sharp.IconButton btnmodificar;
-        private FontAwesome.Sharp.IconButton btnagregar;
-        private System.Windows.Forms.TextBox txtcantidadmat;
+        private FontAwesome.Sharp.IconButton btnEliminarMaterialdanado;
+        private FontAwesome.Sharp.IconButton btnModificarMaterialdanado;
+        private FontAwesome.Sharp.IconButton btnAgregarMaterialdanado;
+        private System.Windows.Forms.TextBox comboBoxCantidadMaterialDanado;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFechaDanio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBoxmatdañado;
+        private System.Windows.Forms.ComboBox comboBoxNombreMaterialDanado;
+        private System.Windows.Forms.DataGridView dgvMaterialDanado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreMaterial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Causante;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaIncidente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CantidadDanada;
     }
 }
