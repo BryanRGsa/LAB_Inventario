@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Collections.Generic;
+using System.Data.SQLite; // Importar el espacio de nombres para SQLite
 using CapaLogicaNegocio;
 
 namespace CapaAccesoDatos
@@ -13,24 +12,46 @@ namespace CapaAccesoDatos
     {
         private ConexionBaseDatos conexion;
 
-        public RepositorioPrestamo()
+        public RepositorioPrestamo(string rutaBD)
         {
-            conexion = new ConexionBaseDatos();
+            conexion = new ConexionBaseDatos(rutaBD);
         }
 
-        // Método para manejar operaciones de préstamo en la base de datos
-        // Por ejemplo:
         public void RegistrarPrestamo(Prestamo prestamo)
         {
-            // Lógica para registrar un préstamo en la base de datos utilizando la conexión
-            // Ejemplo:
-            using (SqlConnection conn = conexion.ObtenerConexion())
+            using (SQLiteConnection conn = conexion.ObtenerConexion())
             {
-                // Insertar datos en la tabla de préstamos
-                // ...
+                conn.Open();
+                string query = "INSERT INTO Prestamos (NombrePersona, MaterialPrestado, DNI, FechaPrestamo, CantidadPrestada) VALUES (@NombrePersona, @MaterialPrestado, @DNI, @FechaPrestamo, @CantidadPrestada)";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                {
+                    // Asignar valores a los parámetros
+                    cmd.Parameters.AddWithValue("@NombrePersona", prestamo.NombrePersona);
+                    cmd.Parameters.AddWithValue("@MaterialPrestado", prestamo.MaterialPrestado);
+                    cmd.Parameters.AddWithValue("@DNI", prestamo.DNI);
+                    cmd.Parameters.AddWithValue("@FechaPrestamo", prestamo.FechaPrestamo);
+                    cmd.Parameters.AddWithValue("@CantidadPrestada", prestamo.CantidadPrestada);
+
+                    try
+                    {
+                        int filasAfectadas = cmd.ExecuteNonQuery();
+                        if (filasAfectadas > 0)
+                        {
+                            Console.WriteLine("El préstamo se ha registrado correctamente.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No se pudo registrar el préstamo.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error al registrar el préstamo: " + ex.Message);
+                        // Puedes manejar o registrar la excepción según sea necesario
+                    }
+                }
             }
         }
-
-        // Otros métodos para operaciones con préstamos
     }
 }

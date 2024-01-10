@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igHo2DvhzPGmbh4IB8zCd2La38aDBGb1YxYivbgbEED42okxQyBwPofdZHj9NWDc99qfPclZNSJRYZk8Fh+Mjg==",
+  "dgSpecHash": "C5AAADXsiODx5unkRfYo2wZ60+TNquF2/VbnnKgz8UeZkXKCYeJWLsEriueELU9KVhysCbOUER547r1Ecu+LjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

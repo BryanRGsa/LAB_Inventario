@@ -8,7 +8,6 @@ using CapaLogicaNegocio;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 
-
 namespace CapaAccesoDatos
 {
     public class RepositorioMaterial
@@ -34,12 +33,14 @@ namespace CapaAccesoDatos
                 {
                     while (dataReader.Read())
                     {
-                        Material material = new Material
-                        {
-                            Id = Convert.ToInt32(dataReader["Id"]),
-                            Nombre = dataReader["Nombre"].ToString(),
-                            // Agregar otras propiedades aquí...
-                        };
+                        Material material = new Material();
+
+                        // Verifica si los valores obtenidos de la base de datos son nulos antes de asignarlos
+                        material.Id = dataReader["Id"] != DBNull.Value ? Convert.ToInt32(dataReader["Id"]) : 0;
+                        material.Nombre = dataReader["Nombre"] != DBNull.Value ? dataReader["Nombre"].ToString() : string.Empty;
+                        material.Cantidad = dataReader["Cantidad"] != DBNull.Value ? Convert.ToInt32(dataReader["Cantidad"]) : 0;
+                        material.Gabinete = dataReader["Gabinete"] != DBNull.Value ? dataReader["Gabinete"].ToString() : string.Empty;
+
                         materiales.Add(material);
                     }
                 }
@@ -47,12 +48,6 @@ namespace CapaAccesoDatos
 
             return materiales;
         }
-
-        // Implementa métodos para agregar, actualizar, eliminar materiales, etc.
-        // ...
-
-
-
 
         public bool AgregarMaterial(Material material)
         {
@@ -64,7 +59,7 @@ namespace CapaAccesoDatos
                 cmd.Parameters.AddWithValue("@Nombre", material.Nombre);
                 cmd.Parameters.AddWithValue("@Cantidad", material.Cantidad);
                 cmd.Parameters.AddWithValue("@Gabinete", material.Gabinete);
-                cmd.Parameters.AddWithValue("@FechaRegistro", material.FechaRegistro);
+                cmd.Parameters.AddWithValue("@FechaRegistro", DateTime.Now); // Fecha actual como ejemplo
 
                 int filasAfectadas = cmd.ExecuteNonQuery();
                 return filasAfectadas > 0;
@@ -76,12 +71,11 @@ namespace CapaAccesoDatos
             using (SQLiteConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
-                string query = "UPDATE Materiales SET Nombre = @Nombre, Cantidad = @Cantidad, Gabinete = @Gabinete, FechaRegistro = @FechaRegistro WHERE Id = @Id";
+                string query = "UPDATE Materiales SET Nombre = @Nombre, Cantidad = @Cantidad, Gabinete = @Gabinete WHERE Id = @Id";
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Nombre", material.Nombre);
                 cmd.Parameters.AddWithValue("@Cantidad", material.Cantidad);
                 cmd.Parameters.AddWithValue("@Gabinete", material.Gabinete);
-                cmd.Parameters.AddWithValue("@FechaRegistro", material.FechaRegistro);
                 cmd.Parameters.AddWithValue("@Id", material.Id);
 
                 int filasAfectadas = cmd.ExecuteNonQuery();
@@ -104,3 +98,4 @@ namespace CapaAccesoDatos
         }
     }
 }
+

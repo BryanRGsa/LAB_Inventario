@@ -34,3 +34,28 @@ C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaPresentacion\b
 C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
 C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\DELL\Documents\Laboratorio inventario\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.FormHistorial.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.FormInforme.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.FormInventario.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.FormPrestamo.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.Login.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\System.Data.SQLite.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\bin\Debug\System.Data.SQLite.xml
+C:\Users\DELL\Documents\LAB_Inventario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete

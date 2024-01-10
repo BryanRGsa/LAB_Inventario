@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {}
+    "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {
+    "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
         "projectName": "CapaAccesoDatos",
-        "projectPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj"
+              "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj"
               }
             }
           }
@@ -51,10 +51,6 @@
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "SQLite": {
-              "target": "Package",
-              "version": "[3.13.0, )"
             },
             "System.Data.SQLite": {
               "target": "Package",
@@ -81,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
+    "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
         "projectName": "CapaLogicaNegocios",
-        "projectPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
+        "projectPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -150,33 +150,6 @@
           }
         }
       },
-      "SQLite/3.13.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/libsqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/native/libsqlite3.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win7-x64/native/sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win7-x64"
-          },
-          "runtimes/win7-x86/native/sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win7-x86"
-          }
-        }
-      },
       "SQLitePCLRaw.core/2.1.6": {
         "type": "package",
         "dependencies": {
@@ -767,27 +740,6 @@
         "version.txt"
       ]
     },
-    "SQLite/3.13.0": {
-      "sha512": "MJfRiz2p6aMVOxrxGMdVzhpzI0oxTgZSwC8eVuOpV8L7yYaFUu8q/OFYwv9P0/aZ/pdEu24O6gma6wZJMTun9A==",
-      "type": "package",
-      "path": "sqlite/3.13.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net45/SQLite.props",
-        "lib/netstandard1.0/_._",
-        "runtimes/linux-x64/native/libsqlite3.so",
-        "runtimes/osx-x64/native/libsqlite3.dylib",
-        "runtimes/win10-arm/nativeassets/uap10.0/sqlite3.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/sqlite3.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/sqlite3.dll",
-        "runtimes/win7-x64/native/sqlite3.dll",
-        "runtimes/win7-x86/native/sqlite3.dll",
-        "sqlite-version.txt",
-        "sqlite.3.13.0.nupkg.sha512",
-        "sqlite.nuspec"
-      ]
-    },
     "SQLitePCLRaw.core/2.1.6": {
       "sha512": "wO6v9GeMx9CUngAet8hbO7xdm+M42p1XeJq47ogyRoYSvNSp0NGLI+MgC0bhrMk9C17MTVFlLiN6ylyExLCc5w==",
       "type": "package",
@@ -1364,7 +1316,6 @@
     "net6.0": [
       "CapaLogicaNegocios >= 1.0.0",
       "Microsoft.Data.Sqlite.Core >= 8.0.0",
-      "SQLite >= 3.13.0",
       "System.Data.SQLite >= 1.0.118"
     ]
   },
@@ -1375,11 +1326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
       "projectName": "CapaAccesoDatos",
-      "projectPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+      "projectPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1400,8 +1351,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj"
+            "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaLogicaNegocios\\CapaLogicaNegocios.csproj"
             }
           }
         }
@@ -1419,10 +1370,6 @@
           "Microsoft.Data.Sqlite.Core": {
             "target": "Package",
             "version": "[8.0.0, )"
-          },
-          "SQLite": {
-            "target": "Package",
-            "version": "[3.13.0, )"
           },
           "System.Data.SQLite": {
             "target": "Package",

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data.SqlClient;
-using System;
+
 
 namespace CapaAccesoDatos
 {
@@ -20,8 +20,8 @@ namespace CapaAccesoDatos
 
         public SQLiteConnection ObtenerConexion()
         {
-            string connectionString = $"Data Source={rutaBaseDatos};Version=3;";
-            return new SQLiteConnection(connectionString);
+            SQLiteConnection conexion = new SQLiteConnection($"Data Source={rutaBaseDatos};Version=3;");
+            return conexion;
         }
     }
 }

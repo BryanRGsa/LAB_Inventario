@@ -231,6 +231,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInforme";
+            this.Load += new System.EventHandler(this.FormInforme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterialDanado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

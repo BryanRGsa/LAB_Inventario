@@ -28,7 +28,6 @@ namespace CapaPresentacion
         {
             // Lógica para cargar los materiales en el ComboBox de materiales
             // (Esta lógica dependerá de cómo obtienes los datos de materiales)
-            // Ejemplo:
             cmbMateriales.Items.Add("Material 1");
             cmbMateriales.Items.Add("Material 2");
             // Agregar más materiales si es necesario
@@ -76,5 +75,29 @@ namespace CapaPresentacion
 
             return cantidadDisponible;
         }
+
+        private void LlenarComboBoxCantidadDisponible(int cantidad)
+        {
+            cmbCantidadDisponibleMaterial.Items.Clear();
+
+            for (int i = 1; i <= cantidad; i++)
+            {
+                cmbCantidadDisponibleMaterial.Items.Add(i);
+            }
+
+            // Si quieres seleccionar la primera cantidad disponible automáticamente, descomenta la siguiente línea:
+            // cmbCantidadDisponibleMaterial.SelectedIndex = 0;
+        }
+
+        private void FormPrestamo_Load_1(object sender, EventArgs e)
+        {
+            // Código para el evento FormPrestamo_Load_1
+        }
+
+        private void cmbCantidadDisponibleMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Código para el evento cmbCantidadDisponibleMaterial_SelectedIndexChanged
+        }
     }
 }
+

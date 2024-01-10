@@ -11,7 +11,6 @@ namespace CapaLogicaNegocio
         public string? NombrePersona { get; set; } // Marcar como nullable si puede aceptar valores NULL
         public string? MaterialPrestado { get; set; } // Marcar como nullable si puede aceptar valores NULL
         public string? DNI { get; set; } // Marcar como nullable si puede aceptar valores NULL
-
         public DateTime FechaPrestamo { get; set; }
         public int CantidadPrestada { get; set; }
 
@@ -25,3 +24,4 @@ namespace CapaLogicaNegocio
         }
     }
 }
+

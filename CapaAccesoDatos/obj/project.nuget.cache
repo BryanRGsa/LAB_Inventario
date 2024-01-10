@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NlIjGQrb76lwoAXsPh+bJ14DlJ1ipXdrey5qV20lUYV8n0b1J7jj+A6QUvXaKUzzYhRDDQ+9N1aDKft5L8F5DQ==",
+  "dgSpecHash": "/jdtZnK7KM19vscJRp2eJznsr/AX8O5Won8cj2E4VNwEHNFkQfy0rDlvB+Aq+FE0JFUTCXhIHMdpAIqDCmYWSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Documents\\Laboratorio inventario\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\LAB_Inventario\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -14,7 +14,6 @@
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",

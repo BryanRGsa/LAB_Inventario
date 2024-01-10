@@ -248,6 +248,7 @@
             this.cmbCantidadDisponibleMaterial.Name = "cmbCantidadDisponibleMaterial";
             this.cmbCantidadDisponibleMaterial.Size = new System.Drawing.Size(165, 21);
             this.cmbCantidadDisponibleMaterial.TabIndex = 24;
+            this.cmbCantidadDisponibleMaterial.SelectedIndexChanged += new System.EventHandler(this.cmbCantidadDisponibleMaterial_SelectedIndexChanged);
             // 
             // FormPrestamo
             // 
@@ -274,6 +275,7 @@
             this.Name = "FormPrestamo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPrestamo";
+            this.Load += new System.EventHandler(this.FormPrestamo_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.datosprestamo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
